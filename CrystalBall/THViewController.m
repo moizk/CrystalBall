@@ -26,4 +26,11 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)buttonPressed {
+    self.predictionLabel.text = @"YES";
+}
+
+
+
+
 @end

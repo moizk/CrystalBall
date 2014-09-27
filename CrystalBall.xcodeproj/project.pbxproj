@@ -112,8 +112,6 @@
 		C861CCFE19CA718B00B60509 /* CrystalBall */ = {
 			isa = PBXGroup;
 			children = (
-				C861CD0719CA718B00B60509 /* THAppDelegate.h */,
-				C861CD0819CA718B00B60509 /* THAppDelegate.m */,
 				C861CD0A19CA718B00B60509 /* Main.storyboard */,
 				C861CD0D19CA718B00B60509 /* THViewController.h */,
 				C861CD0E19CA718B00B60509 /* THViewController.m */,
@@ -126,6 +124,8 @@
 		C861CCFF19CA718B00B60509 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C861CD0719CA718B00B60509 /* THAppDelegate.h */,
+				C861CD0819CA718B00B60509 /* THAppDelegate.m */,
 				C861CD0019CA718B00B60509 /* CrystalBall-Info.plist */,
 				C861CD0119CA718B00B60509 /* InfoPlist.strings */,
 				C861CD0419CA718B00B60509 /* main.m */,
@@ -200,6 +200,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = Moiz;
 				TargetAttributes = {
+					C861CCF419CA718B00B60509 = {
+						DevelopmentTeam = VWKBDST4AP;
+					};
 					C861CD1519CA718B00B60509 = {
 						TestTargetID = C861CCF419CA718B00B60509;
 					};
@@ -377,10 +380,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CrystalBall/CrystalBall-Prefix.pch";
 				INFOPLIST_FILE = "CrystalBall/CrystalBall-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -390,10 +396,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CrystalBall/CrystalBall-Prefix.pch";
 				INFOPLIST_FILE = "CrystalBall/CrystalBall-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -457,6 +466,7 @@
 				C861CD2919CA718B00B60509 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C861CD2A19CA718B00B60509 /* Build configuration list for PBXNativeTarget "CrystalBallTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +475,7 @@
 				C861CD2C19CA718B00B60509 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
