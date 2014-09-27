@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C81FD95019D777410071D405 /* THCrystalBall.m in Sources */ = {isa = PBXBuildFile; fileRef = C81FD94F19D777410071D405 /* THCrystalBall.m */; };
 		C861CCF919CA718B00B60509 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C861CCF819CA718B00B60509 /* Foundation.framework */; };
 		C861CCFB19CA718B00B60509 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C861CCFA19CA718B00B60509 /* CoreGraphics.framework */; };
 		C861CCFD19CA718B00B60509 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C861CCFC19CA718B00B60509 /* UIKit.framework */; };
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C81FD94E19D777410071D405 /* THCrystalBall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THCrystalBall.h; sourceTree = "<group>"; };
+		C81FD94F19D777410071D405 /* THCrystalBall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THCrystalBall.m; sourceTree = "<group>"; };
 		C861CCF519CA718B00B60509 /* CrystalBall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrystalBall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C861CCF819CA718B00B60509 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C861CCFA19CA718B00B60509 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -117,6 +120,8 @@
 				C861CD0E19CA718B00B60509 /* THViewController.m */,
 				C861CD1019CA718B00B60509 /* Images.xcassets */,
 				C861CCFF19CA718B00B60509 /* Supporting Files */,
+				C81FD94E19D777410071D405 /* THCrystalBall.h */,
+				C81FD94F19D777410071D405 /* THCrystalBall.m */,
 			);
 			path = CrystalBall;
 			sourceTree = "<group>";
@@ -256,6 +261,7 @@
 				C861CD0F19CA718B00B60509 /* THViewController.m in Sources */,
 				C861CD0919CA718B00B60509 /* THAppDelegate.m in Sources */,
 				C861CD0519CA718B00B60509 /* main.m in Sources */,
+				C81FD95019D777410071D405 /* THCrystalBall.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

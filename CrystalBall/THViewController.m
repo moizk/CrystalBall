@@ -7,6 +7,7 @@
 //
 
 #import "THViewController.h"
+#import "THCrystalBall.h"
 
 @interface THViewController ()
 
@@ -17,7 +18,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    self.crystalBall = [[THCrystalBall alloc] init];
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -27,7 +29,7 @@
 }
 
 - (IBAction)buttonPressed {
-    self.predictionLabel.text = @"YES";
+    self.predictionLabel.text = [self.crystalBall randomPrediction];
 }
 
 
