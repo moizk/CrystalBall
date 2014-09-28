@@ -20,19 +20,6 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="3gF-nb-Xn4">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qzj-1h-V0n">
-                                <rect key="frame" x="30" y="501" width="261" height="47"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="47" id="GfF-3K-o1W"/>
-                                    <constraint firstAttribute="width" constant="261" id="UjZ-64-fhV"/>
-                                </constraints>
-                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" image="button-off"/>
-                                <state key="highlighted" image="button-on"/>
-                                <connections>
-                                    <action selector="buttonPressed" destination="vXZ-lx-hvc" eventType="touchUpInside" id="uwF-jf-JkM"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="It is decidedly so" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lU1-NL-QuJ">
                                 <rect key="frame" x="36" y="183" width="248" height="140"/>
                                 <constraints>
@@ -47,9 +34,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="lU1-NL-QuJ" firstAttribute="centerY" secondItem="3gF-nb-Xn4" secondAttribute="centerY" constant="-31" id="Ygj-4A-qCs"/>
-                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="qzj-1h-V0n" secondAttribute="bottom" constant="20" id="jE9-Q6-9bk"/>
                             <constraint firstItem="lU1-NL-QuJ" firstAttribute="centerX" secondItem="3gF-nb-Xn4" secondAttribute="centerX" id="knk-aw-wqA"/>
-                            <constraint firstAttribute="centerX" secondItem="qzj-1h-V0n" secondAttribute="centerX" id="m6l-jP-Nhs"/>
                         </constraints>
                     </view>
                     <connections>
@@ -62,8 +47,6 @@
     </scenes>
     <resources>
         <image name="background" width="320" height="568"/>
-        <image name="button-off" width="261" height="49"/>
-        <image name="button-on" width="261" height="47"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
