@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		C81FD95019D777410071D405 /* THCrystalBall.m in Sources */ = {isa = PBXBuildFile; fileRef = C81FD94F19D777410071D405 /* THCrystalBall.m */; };
+		C83821E619D891910028DF92 /* crystal_ball.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C83821E519D891910028DF92 /* crystal_ball.mp3 */; };
+		C83821E819D891DB0028DF92 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C83821E719D891DB0028DF92 /* AudioToolbox.framework */; };
 		C861CCF919CA718B00B60509 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C861CCF819CA718B00B60509 /* Foundation.framework */; };
 		C861CCFB19CA718B00B60509 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C861CCFA19CA718B00B60509 /* CoreGraphics.framework */; };
 		C861CCFD19CA718B00B60509 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C861CCFC19CA718B00B60509 /* UIKit.framework */; };
@@ -37,6 +39,8 @@
 /* Begin PBXFileReference section */
 		C81FD94E19D777410071D405 /* THCrystalBall.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = THCrystalBall.h; sourceTree = "<group>"; };
 		C81FD94F19D777410071D405 /* THCrystalBall.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = THCrystalBall.m; sourceTree = "<group>"; };
+		C83821E519D891910028DF92 /* crystal_ball.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = crystal_ball.mp3; sourceTree = "<group>"; };
+		C83821E719D891DB0028DF92 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		C861CCF519CA718B00B60509 /* CrystalBall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrystalBall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C861CCF819CA718B00B60509 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C861CCFA19CA718B00B60509 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -63,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C83821E819D891DB0028DF92 /* AudioToolbox.framework in Frameworks */,
 				C861CCFB19CA718B00B60509 /* CoreGraphics.framework in Frameworks */,
 				C861CCFD19CA718B00B60509 /* UIKit.framework in Frameworks */,
 				C861CCF919CA718B00B60509 /* Foundation.framework in Frameworks */,
@@ -104,6 +109,7 @@
 		C861CCF719CA718B00B60509 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C83821E719D891DB0028DF92 /* AudioToolbox.framework */,
 				C861CCF819CA718B00B60509 /* Foundation.framework */,
 				C861CCFA19CA718B00B60509 /* CoreGraphics.framework */,
 				C861CCFC19CA718B00B60509 /* UIKit.framework */,
@@ -118,6 +124,7 @@
 				C861CD0A19CA718B00B60509 /* Main.storyboard */,
 				C861CD0D19CA718B00B60509 /* THViewController.h */,
 				C861CD0E19CA718B00B60509 /* THViewController.m */,
+				C83821E519D891910028DF92 /* crystal_ball.mp3 */,
 				C861CD1019CA718B00B60509 /* Images.xcassets */,
 				C861CCFF19CA718B00B60509 /* Supporting Files */,
 				C81FD94E19D777410071D405 /* THCrystalBall.h */,
@@ -239,6 +246,7 @@
 			files = (
 				C861CD1119CA718B00B60509 /* Images.xcassets in Resources */,
 				C861CD0319CA718B00B60509 /* InfoPlist.strings in Resources */,
+				C83821E619D891910028DF92 /* crystal_ball.mp3 in Resources */,
 				C861CD0C19CA718B00B60509 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

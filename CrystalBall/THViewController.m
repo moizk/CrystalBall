@@ -8,16 +8,24 @@
 
 #import "THViewController.h"
 #import "THCrystalBall.h"
+#import <AudioToolbox/AudioToolbox.h>
 
 @interface THViewController ()
 
 @end
 
-@implementation THViewController
+@implementation THViewController {
+    SystemSoundID soundEffect;
+    
+}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    NSString *soundPath = [[NSBundle mainBundle] pathForResource:@"crystal_ball" ofType:@"mp3"];
+    NSURL *soundURL = [NSURL fileURLWithPath:soundPath];
+    AudioServicesCreateSystemSoundID(CFBridgingRetain(soundURL), &soundEffect);
+    
     self.crystalBall = [[THCrystalBall alloc] init];
     
     self.backgroundImageView.animationImages = [[NSArray alloc] initWithObjects:
@@ -98,12 +106,18 @@
 - (void) makePrediction {
     [self.backgroundImageView startAnimating];
     self.predictionLabel.text = [self.crystalBall randomPrediction];
+    AudioServicesPlaySystemSound(soundEffect);
+    
+    [UIView animateWithDuration:6.0 animations:^{
+        self.predictionLabel.alpha = 1.0f;
+    }];
 }
 
 #pragma mark - Motion Events
 
 - (void) motionBegan:(UIEventSubtype)motion withEvent:(UIEvent *)event {
     self.predictionLabel.text = nil;
+    self.predictionLabel.alpha = 0.0f;
 }
 
 - (void) motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event {
@@ -120,6 +134,7 @@
 
 - (void) touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     self.predictionLabel.text = nil;
+    self.predictionLabel.alpha = 0.0f;
 }
 
 - (void) touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
